@@ -18,3 +18,4 @@ const g65537 = secp256k1.multiply(secp256k1.g, Math.pow(2, 16) + 1)
 if (g65537.toString() !== '{"x":"23314d19b5eff3c387a420b92c3c3135995d268ece08076a59de4e4dc5356876","y":"fd254f9a8cc854afecd1d2a7ba16599671ac00bfa98c500a74ed9c906769a871"}') {
   throw 'failure to multiply non binary number'
 }
+console.log('✅ secp256k1 tests passed!')
